@@ -39,4 +39,3 @@ Integrate Zoho services and transition to a custom-built website with enhanced p
 - `configs/`
 - `scripts/`
 - `README.md`
-- `LICENSE`
