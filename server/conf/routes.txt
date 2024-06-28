@@ -1,0 +1,50 @@
++nocsrf
+POST    /signup                                 tech.vauldex.controllers.SignupController.create
+
++nocsrf
+POST    /signin                                 tech.vauldex.controllers.AuthController.create
+
++nocsrf
+PUT     /members                                tech.vauldex.controllers.MemberController.update
+
++nocsrf
+PUT     /members/tutorial                       tech.vauldex.controllers.MemberController.updateTutorial
+GET     /members/all                            tech.vauldex.controllers.MemberController.get
+GET     /members                                tech.vauldex.controllers.MemberController.find
+PATCH   /members/avatar                        tech.vauldex.controllers.AvatarController.edit
+GET     /members/avatar                          tech.vauldex.controllers.AvatarController.get
++nocsrf
+POST     /members/badges                        tech.vauldex.controllers.MemberController.send
+
++nocsrf
+POST    /courses                                tech.vauldex.controllers.CourseController.create
+GET     /courses                                tech.vauldex.controllers.CourseController.get
+GET     /courses/length                         tech.vauldex.controllers.CourseController.getLength
+GET     /courses/nav                            tech.vauldex.controllers.CourseController.getCourseNav
+GET     /course/:id                             tech.vauldex.controllers.CourseController.getById(id: java.util.UUID)
+PATCH   /course                                 tech.vauldex.controllers.CourseController.edit
+DELETE  /course/:id                             tech.vauldex.controllers.CourseController.delete(id: java.util.UUID)
+
+GET    /courses/history 			            tech.vauldex.controllers.CourseHistoryController.get
+GET    /courses/history/lessons/completed       tech.vauldex.controllers.CourseHistoryController.getCompletedLessons
+GET    /courses/history/lessons/conditions      tech.vauldex.controllers.CourseHistoryController.getAllToLearnLessons
+GET    /courses/locked			                tech.vauldex.controllers.CourseHistoryController.getLockedCourses
+PUT    /courses/history        			        tech.vauldex.controllers.CourseHistoryController.checkThenUpdate
+
++nocsrf
+POST    /sections                               tech.vauldex.controllers.SectionController.create
+GET     /sections/all                           tech.vauldex.controllers.SectionController.get
+DELETE  /sections/:id                           tech.vauldex.controllers.SectionController.delete(id: java.util.UUID)
++nocsrf
+PUT     /sections                               tech.vauldex.controllers.SectionController.update
+
++nocsrf
+POST    /lessons                                tech.vauldex.controllers.LessonController.create
+GET     /lessons                                tech.vauldex.controllers.LessonController.get
+GET     /lessons/length                         tech.vauldex.controllers.LessonController.getLength
+DELETE  /lessons/:id                            tech.vauldex.controllers.LessonController.delete(id: java.util.UUID)
++nocsrf
+PUT    /lessons                                 tech.vauldex.controllers.LessonController.edit
++nocsrf
+PATCH  /lessons                                 tech.vauldex.controllers.ThumbnailController.edit
+
